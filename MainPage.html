@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hiMongolia</title>
+  <link href="MainCss.css" rel="stylesheet" type="text/css" />
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elementsToFade = document.getElementsByClassName('titlesmain');
+      var elementsToFade2 = document.getElementsByClassName('mountains');
+      var elementsToFade3 = document.getElementsByClassName('shadow');
+
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 700) {
+          for (var i = 0; i < elementsToFade.length; i++) {
+            elementsToFade[i].style.opacity = '0';
+          }
+        } else {
+          for (var i = 0; i < elementsToFade.length; i++) {
+            elementsToFade[i].style.opacity = '1';
+          }
+        }
+      });
+
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 500) {
+          for (var i = 0; i < elementsToFade2.length; i++) {
+            elementsToFade2[i].style.opacity = '0';
+          }
+        } else {
+          for (var i = 0; i < elementsToFade2.length; i++) {
+            elementsToFade2[i].style.opacity = '1';
+          }
+        }
+      });
+
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+          for (var i = 0; i < elementsToFade2.length; i++) {
+            elementsToFade3[i].style.opacity = '1';
+          }
+        } else {
+          for (var i = 0; i < elementsToFade2.length; i++) {
+            elementsToFade3[i].style.opacity = '0';
+          }
+        }
+      });
+
+    });
+  </script>
+
+  <img class="shadow" src="file:///Users/bigune/Documents/Programing/html/Tour%20Website%20Project/Images%20to%20use/Main%20Page/gradient.png" alt="">
+</head>
+<body class="scroll-container">
+  <div class="topnav">
+    <a class="active" href="#home" id="himongoliabtn">hiMongolia</a>
+    <a href="#discover">Discover</a>
+    <a href="#nightsky">About Us</a>
+    <a href="#relaxing">Programs</a>
+    <a href="#contact">Contact</a>
+    <a href="#blog">Blog</a>
+  </div>
+
+  <div id="home">
+    <div class="container-img">
+        <img id="sunset01" src="file:///Users/bigune/Documents/Programing/html/Tour%20Website%20Project/Images%20to%20use/Main%20Page/Sky.png" alt="Sunset">
+        <img id="nightsky" src="file:///Users/bigune/Documents/Programing/html/Tour%20Website%20Project/Images%20to%20use/Main%20Page/starrysky.jpg" alt="starry Night">
+        <div id="programs">
+            <img class="programs" id="offroading" src="file:///Users/bigune/Documents/Programing/html/Tour%20Website%20Project/Images%20to%20use/Main%20Page/offroading.png" alt="">
+            <img class="programs" id="relaxing" src="file:///Users/bigune/Documents/Programing/html/Tour%20Website%20Project/Images%20to%20use/Main%20Page/relaxing.png" alt="">
+            <img class="programs" id="Adventurous" src="file:///Users/bigune/Documents/Programing/html/Tour%20Website%20Project/Images%20to%20use/Main%20Page/adventurous.png" alt="">
+        </div>
+
+        <div id="bottomhalf">
+            <div id="reviews">
+                <h1>Reviews</h1>
+                <img id="stars" src="https://static.vecteezy.com/system/resources/previews/009/663/927/non_2x/5-star-rating-review-star-transparent-free-png.png" alt="">
+                <p>“Greatest tourer ever. Guides were all so polite and kind.”</p>
+                <p>“Very unique activities, interesting programs, entertaining routes, loveliest guides, nicest community. Best traveling experience ever.”</p>
+                <p>“Recommended. One of the most memorable traveling experiences ever.”</p>
+            </div>
+
+            <div id="sponsors">
+                <h2>Special thanks to our sponsors!</h2>
+            </div>
+
+            <div id="contact">
+                <div id="location">
+                    <p>hiMongolia HQ: somewhere around Ulan-Bator, Mongolia</p>
+                </div>
+                <div id="social">
+                    <a href="instagram.com">Instagram: @hiMongolia_tour</a>
+                    <a href="facebook.com">Facebook: hiMongolia Tour</a>
+                    <a href="Blog">Blog: hiMongolia Tour</a>
+                    <a href="himongolia.com">Website: himongolia.com</a>
+                </div>
+                <div id="contacts">
+                    <p>Email: himongoliatour@gmail.com</p>
+                    <p>Mongolia: +976-1101-1010</p>
+                    <p>Korea: +82-9999-0090</p>
+                </div>
+            </div> 
+        </div>
+
+    </div>
+
+
+    <div class="overlay-pics">
+        <img class="mountains" id="mountains" src="file:///Users/bigune/Documents/Programing/html/Tour%20Website%20Project/Images%20to%20use/Main%20Page/Artboard 2.png" alt="Mountains">
+        <img id="yurtmain" src="file:///Users/bigune/Documents/Programing/html/Tour%20Website%20Project/Images%20to%20use/Main%20Page/Yurt02.png" alt="Mountains">
+        <div id="learnmore_pics">
+            <img id="yurts" src="file:///Users/bigune/Documents/Programing/html/Tour%20Website%20Project/Images%20to%20use/Main%20Page/yurts.png" alt="Yurts">
+        </div>
+
+    </div>
+
+
+    <div id="top">  
+        <div class="titlesmain">
+            <h1 id="welcome" class="welcometext">Welcome To</h1>
+            <h1 id="mongoliatitle" class="welcometext">MONGOLIA</h1>
+        </div>
+
+    </div>
+
+    <div id="contents">  
+
+        <div class="discover_page">
+            <h1 id="discover">Discover</h1>
+            <p>Explore Mongolia's untouched beauty from vast steppes to the Gobi Desert, immersing yourself in nomadic culture, enjoying legendary hospitality, and discovering rich history. Encounter diverse wildlife, embrace adventure with trekking and camel safaris, and witness unparalleled stargazing. Lively festivals, historic sites, and peaceful tranquility make Mongolia a unique convergence of nature, culture, and adventure.</p>
+            <a href="****INSERT DISCOVER MORE PAGE HERE****">Discover More...</a>
+          </div>
+          
+        
+        <div id="about_us">
+            <h1>About Us</h1>
+            <p>Welcome to hiMongolia, where every journey is a vibrant tapestry of adventure, culture, and discovery. As your premier travel companion, we invite you to explore the untamed beauty and rich heritage of Mongolia in the most immersive and memorable way. At hiMongolia, we go beyond the ordinary, curating experiences that captivate the spirit and create lifelong memories. Join us as we unlock the treasures of Mongolia, ensuring each step is a greeting to the extraordinary. Say hi to your next unforgettable adventure with hiMongolia Tours!</p>
+        </div>
+    </div>
+
+  </div>
+</body>
+</html>
